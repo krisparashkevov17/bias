@@ -1,11 +1,11 @@
 """
-03_robustness.py — Robustness checks for SQ2.
+03_sq2_analysis.py — SQ2 analysis: gender bias vs. weighted path distance.
 
-Experiments
------------
-1. Topology–bias correlation, weighted paths (LME per network)
+Steps
+-----
+1. Weighted shortest paths + per-network LMEs (supplementary)
 
-2. Pooled LME (SQ2)
+2. Pooled LME — SQ2 main model
 
 Output
   data/robustness/robustness_weighted_path_lme.csv
@@ -228,4 +228,4 @@ with open(int_txt, "w") as fh:
     fh.write(fe_int.to_string(index=False))
 print(f"\n  Saved: {int_txt}")
 
-print("\nRobustness checks complete.")
+print("\nSQ2 analysis complete.")

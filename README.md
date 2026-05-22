@@ -36,7 +36,7 @@ must run after them — it reads their CSV outputs.
 |---|---|
 | `01_topology.py` | `data/topology_metrics.csv`, `data/topology_comparisons.csv` (SQ1) |
 | `02_bias_analysis.py` | `data/stats/wilcoxon_gender_{F,M}.csv` |
-| `03_robustness.py` | `data/topology_bias_data.csv`, `data/robustness/robustness_weighted_path_lme.csv`, `data/stats/lme_pooled_{main,interaction}.txt` (SQ2) |
+| `03_sq2_analysis.py` | `data/topology_bias_data.csv`, `data/robustness/robustness_weighted_path_lme.csv`, `data/stats/lme_pooled_{main,interaction}.txt` (SQ2) |
 | `04_figures.py` | all thesis figures (PDF) in `figures/` |
 | `make_results_summary.py` | `results_summary.txt` — all reported numbers in one file (optional) |
 
@@ -45,6 +45,6 @@ Full reproduction:
 ```
 python3 01_topology.py
 python3 02_bias_analysis.py
-python3 03_robustness.py
+python3 03_sq2_analysis.py
 python3 04_figures.py
 ```
